@@ -1,5 +1,5 @@
 
-const apiKey = 'd42b62f48cc345e7fdba814d';
+const apiKey = '';
 const baseURL = 'https://v6.exchangerate-api.com/v6/';
 
 export const getExchangeRate = async () =>{
