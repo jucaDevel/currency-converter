@@ -1,5 +1,20 @@
 <template>
-    <div class="w-screen h-screen font-roboto bg-gradient-to-t from-zinc-200 to-gray-100 flex items-center justify-center">
+    <div class="w-screen h-screen font-roboto bg-gradient-to-t from-zinc-200 to-gray-100 flex flex-col items-center justify-between">
+        <div class="bg-primary w-full text-white">
+            <div class="flex flex-row justify-between px-1">
+                <div class="h-20 bg-white inline-block rounded-full my-3">
+                    <img class="h-full" src="@/assets/TRANScurrencies.png" alt="logo">
+                </div>
+                <div class="container w-8/12 md:w-10/12 flex flex-wrap content-end">
+                    <div class="transition duration-300 ease-in-out hover:bg-gray-100 hover:text-black p-2 rounded-t">
+                        <h3 class="text-left">Currency Converter</h3>
+                    </div>
+                    <div class="transition duration-300 ease-in-out hover:bg-gray-100 hover:text-black p-2 rounded-t">
+                        <h3 class="text-left">About developer</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="w-10/12 h-5/6 bg-white border-2 rounded-lg flex p-5 flex-col md:flex-row">
             <div>
                 <h1 class="text-3xl font-bold tracking-tight text-black sm:text-4xl">Currency converter</h1>
@@ -68,7 +83,7 @@
                     <div class="flex flex-wrap content-start">
                         <button
                         @click="makeConversion"
-                        class="bg-blue-800 text-white p-3 rounded w-full"
+                        class="bg-primary text-white p-3 rounded w-full"
                         >Convertir</button>
                     </div>
                     <div class="col-1 md:col-span-2 bg-gray-100 p-5 h-auto rounded">
